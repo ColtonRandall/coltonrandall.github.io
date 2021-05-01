@@ -29,6 +29,10 @@
 
 @media screen and (max-width: 900px) {
 
+    #mainphoto{
+        width: 100%;
+    }
+
     .nav {
         width: 90%;
         font-size: 10pt;
@@ -37,18 +41,19 @@
     }
 
 
-
-    .ABOUTME * {
+    .ABOUTME {
     display: grid;
     grid-template-columns: 1fr;
     margin: auto;
-    width: 90%;
+    width: 100%;
+    text-align: justify;
 
     }
 
     .aboutMeContent #coleNanook, #rwanda1IMG, #rwanda2IMG, #otagoIMG, #otagoGrad, #flying{
         max-width: 100%;
         height: auto;
+        margin: auto;
     }
   
   }
@@ -56,7 +61,7 @@
 
 @media screen and (min-width: 1024px) {
 
-    /* laptop screen */
+    /* Tablet screen */
     
 }
 
@@ -97,43 +102,43 @@
 
 
 #cvicon{
-    width: 10%;
+    width: 15%;
 }
 
 #cvicon:hover{
-    width: 15%;
+    width: 20%;
     transition-duration: 0.4s;
 }
 
 
 #linkedin{
-    width: 13%;
+    width: 18%;
     border-radius: 20px;
 }
 
 #linkedin:hover{
-    width: 18%;
+    width: 23%;
     border-radius: 20px;
     transition-duration: 0.4s;
 }
 
 #github{
-    width: 15%;
+    width: 20%;
 }
 
 
 #github:hover{
-    width: 21%;
+    width: 26%;
     transition-duration: 0.4s;
 }
 
 #gmail{
-    top: 10px;
+    top: 15px;
     width: 13%;
 }
 
 #gmail:hover{
-    width: 17%;
+    width: 21%;
     transition-duration: 0.4s;
 }
 
@@ -160,7 +165,8 @@
 }
 
 .nav * {
-    color: whitesmoke;
+    color: var(--text-colour);
+    
  
 }
 
@@ -171,9 +177,7 @@ div.nav a:hover {
 
 
 #title{
-    display: grid;
-    grid-template-columns: 1fr;
-    color: whitesmoke;
+    color: var(--text-colour);
     text-align: center;
     font-size: 70pt;
     font-weight: 500;
@@ -182,9 +186,7 @@ div.nav a:hover {
 }
 
 #subTitle{
-    display: grid;
-    grid-template-columns: 1fr;
-    color: whitesmoke;
+    color: var(--text-colour);
     text-align: center;
     font-size: 20pt;
     font-weight: 500;

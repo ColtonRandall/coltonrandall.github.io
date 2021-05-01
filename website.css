@@ -1,14 +1,19 @@
 
 /* * { border: 1px solid white };  */
 
-/*  */
-
- /* Fill the whole page */
-html, body {
-    max-width: 100%;
-    color: whitesmoke;
+:root {
+    --text-colour: aliceblue; 
   }
 
+ /* fill the whole page  */
+ html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+      color: var(--text-colour);
+  }
 
 
 /* --------------------------------------------- */
@@ -69,7 +74,6 @@ html, body {
 }
 
 #mainphoto{
-    /* position: relative; */
     display: grid;
     align-content: center;
     width: 9%;
@@ -152,6 +156,7 @@ html, body {
     margin: auto;
     z-index: 3;
     width: 90%;
+    top: 10px;
 }
 
 .nav * {
@@ -222,11 +227,11 @@ div.nav a:hover {
 
 #scroll{
     position: relative;
-    width: 3%;
+    width: 5%;
     margin: auto;
     display: grid;
     align-content: center;
-    /* bottom: 60px; */
+    bottom: 100px;
 }
 
 

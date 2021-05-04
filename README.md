@@ -1,3 +1,3 @@
 # Portfolio website
 
-## This will act as the basis for my web portfolio and will be updating it as I progress through my postgraduate studies. 
+This is my portfolio website. I will be updating this repo as I progress through my postgraduate studies. Thank you for taking the time to check it out! 

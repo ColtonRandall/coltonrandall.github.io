@@ -406,12 +406,12 @@ div.nav a:hover {
 .certImages img{
     border: 3px solid black;
     width: 20%;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .certImages img:hover{
-    width: 25%;
-    border: 5px outset tomato;
+    width: 30%;
+    border: 5px solid tomato;
     transition-duration: 1s;
 }
 

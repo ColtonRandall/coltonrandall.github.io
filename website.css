@@ -391,6 +391,48 @@ div.nav a:hover {
     border-radius: 10px;
 }
 
+#certContent{
+    font-size: 18pt;
+    text-align: justify;
+}
+
+.certImages {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    margin: auto;
+}
+
+.certImages img{
+    border: 3px solid black;
+    width: 20%;
+    margin: 1rem;
+}
+
+.certImages img:hover{
+    width: 25%;
+    border: 5px outset tomato;
+    transition-duration: 1s;
+}
+
+
+.BioinformaticsDiv{
+    font-size: 18pt;
+    text-align: justify;
+    padding-bottom: 5%;
+    padding-top: 10%;
+    
+}
+
+hr {
+    width: 80%;
+}
+
+
+
+
+
+
 
 
 

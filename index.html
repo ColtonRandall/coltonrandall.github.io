@@ -23,33 +23,19 @@
 
 
 
-<!-- MENU -->
-<div id="menu">
-    <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-    <input type="checkbox" />
-
-
-    <!-- Hamburger bars -->
-    <span></span>
-    <span></span>
-    <span></span>
-
 
     <!-- Headers -->
     <div class="nav">
-        <ul>
-        <a href="#aboutme" id="aboutmeHeader"><li>About Me</li> </a>
-        <a href="#workExp" id="workExpHeader"><li>Experience</li> </a>
-        <a href="#education" id="educationHeader"><li>Education</li></a>
-        <a href="#title" id="jumpToTop"><li>Jump to top</li></a>
-        </ul>
+        
+        <a href="#aboutme" id="aboutmeHeader">About Me</a>
+        <a href="#workExp" id="workExpHeader">Experience</a>
+        <a href="#education" id="educationHeader">Education</a>
+        <a href="#title" id="jumpToTop">Jump to top</a>
+        
     </div>
 
 
-</div>
+
 
 
 
@@ -106,10 +92,7 @@
         <img src="./website_attachments/scroll.png" id="scroll">
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
+  
     <br>
     <br>
     <br>
@@ -127,30 +110,50 @@
         <p id="aboutmeTitle">About me...</p>
 
         <div class="aboutMeContent">
-            <p>
+
+
+            <!-- COLENANOOK  -->
+            <div class="coleNanook">
+
+                <div id="imgTag">
+                <p>New puppy and videogames, what a life! (1999)</p>
+                <img src="./website_attachments/images/coleNanook.jpg" id="coleNanookIMG"/>
+                </div>
+                
+                <p id="coleNanookContent">
                 My name is Colton, a proud dual citizen of two of the most beautiful countries in the world - Canada (my
                 birthplace) and New Zealand (where I grew up). We moved to NZ in 1998, leaving behind all of our
                 extended family in Vancouver. In my early years, I gravitated toward spending time with our new puppy,
                 Nanook, and got my first playstation in 1999 (picture for proof), which was where my interest for
                 technology started.
+                </p>
+                
 
-            <div id="coleNanook">
-                <P>First dog & playstation, 1999.</P>
-                <img src="./website_attachments/images/coleNanook.jpg" id="coleNanookIMG">
             </div>
 
 
+
+
+            <!-- RWANDA1  -->
+            <div class="Rwanda1Div">
+
+            <p id="Rwanda1Content">    
             Fast forward to 2013. I had just finished high-school and was experiencing the need to explore the world and
             what it had to offer. Luckily for me, I had an Aunt who was living and working in Rwanda. This acted as the
             opportunistic-fuel I needed to take a nose-dive into some volunteer experience.
+            </p>
 
-
-            <div id="rwanda1">
-                <img src="./website_attachments/images/rwanda1.jpg" id="rwanda1IMG">
+            <img src="./website_attachments/images/rwanda1.jpg" id="rwanda1IMG">
+            
             </div>
 
 
 
+
+            <!-- RWANDA2  -->
+            <div class="Rwanda2Div">
+
+            <p id="Rwanda2Content">  
             In Rwanda, I taught English at a local orphanage, and a nearby pre-school. It was a raw experience where I
             witnessed both the most amazing stories and people, along with frequently sombering reminders of how lucky I
             am. I later went back in 2016, this time to Kenya, to complete more volunteer work. I taught Maths and
@@ -158,78 +161,66 @@
             assistant deeper in the slum to help local doctors treat the residants for Malaria and various respiratory
             infections. This inevitably encouraged an involvement in healthcare and Biology, which is where my first
             University degree came into play.
-
-            <div id="rwanda2">
-                <img src="./website_attachments/images/rwanda2.jpg" id="rwanda2IMG">
+            </p>
+            
+            <img src="./website_attachments/images/rwanda2.jpg" id="rwanda2IMG">
+            
             </div>
 
 
-            <br>
-            <br>
 
+
+            <!-- OTAGO -->
+            <div class="OtagoDiv">
+                
+            <p id="otagoContent1">    
             I started my first degree at the University of Otago in 2015, taking a general Health Science program which
             involved completing eight interdisciplinary courses, dispersed throughout various degree programs and
-            subjects. This was what introduced me to Biochemistry. It was sonething I never thought I'd enjoy, but the
+            subjects. This was what introduced me to Biochemistry. It was something I never thought I'd enjoy, but the
             requirement to take it lead me to moulding it into a BSc, graduating in 2018.
+            </p>    
 
-            <br>
-            <br>
-            <br>
-
-            <div id="otago">
+            <div id="otagoImages">
                 <img src="./website_attachments/images/otago.jpg" id="otagoIMG">
 
                 <img src="./website_attachments/images/otagoGrad.JPG" id="otagoGradIMG">
             </div>
 
+            </div>
+            
 
-            <br>
-            <br>
+
+
+            <!-- FLYING  -->
+            <div class="flyingDiv">
+            <p id="flyingContent">
             Toward the end of my degree, I decided to simultaneously take some flight lessons at a local aero club. This
             lead to my first ever solo flight - a childhood dream. I decided that I would enroll in a full-time course
             at a flight school to pursue a career as a pilot. I started in 2019, got my private license, then Covid-19
-            spread across the globe. This global event and it's inevitable impact on the industry allowed me to step
+            spread across the globe. This global event and it's inevitable impact on the industry forced me to step
             back and reconsider this path.
-
-            <div id="flying">
-                <img src="./website_attachments/images/flying.JPG" id="flyingIMG">
+            </p>
+            
+            <img src="./website_attachments/images/flying.JPG" id="flyingIMG"/>
             </div>
+            
 
-
-            <br>
-            <br>
-            During lockdown I took a bunch of online courses in programming, since my BSc in Biochemistry exposed me to
-            Bioinformatics - where programming and Biochemistry intertwine. I loved it. Once lockdown ended, I managed
-            to secure myself two jobs at the University of Auckland as a Bioinformatics Research Assistant, which
-            allowed me to get first-hand experience in this area.
-            <br>
-            <br>
+            <div class="BioinformaticsDiv">
+            During lockdown I took a bunch of online courses in programming, since my BSc in Biochemistry exposed me to a bit of it in the form of
+            Bioinformatics - where programming is used to analyse biochemichal data. I loved it. Once lockdown ended, I managed
+            to secure myself three jobs as a Bioinformatics Research Assistant, two at the University of Auckland and one at Landcare Reasearch. 
+            This allowed me to get first-hand programming experience. I continued the conline courses and began slowly updating my GitHub profile with small projects. 
+            
 
             Reaching out and making connections during these jobs helped me realise that a formal qualification in
             programming can not only compliment my BSc in Biochemistry, but open up many more doors than I initially
             thought. I enrolled in the postgraduate certificate in Information Technology at Auckland University, and
-            I've been thoroughly enjoying the content taught thus far and the opportunities these skills can lead to.
-
-
-            <!-- <div class="images">
-            <div id="coleNanook"> 
-                <P>First dog & playstation, 1999.</P>
-                <img src="./website_attachments/images/coleNanook.jpg"id="coleNanookIMG">
+            I've been thoroughly enjoying the content taught thus far and the opportunities these skills can lead to.  
             </div>
-
-            <img src="./website_attachments/images/rwanda1.jpg" id="rwanda1IMG">
-
-            <img src="./website_attachments/images/rwanda2.jpg" id="rwanda2IMG">
-
-            <img src="./website_attachments/images/otago.jpg" id="otagoIMG">
-
-            <img src="./website_attachments/images/otagoGrad.JPG" id="otagoGrad">
-
-            <img src="./website_attachments/images/flying.JPG" id="flying"> -->
 
 
         </div>
-        </p>
+        
     </div>
     </div>
 

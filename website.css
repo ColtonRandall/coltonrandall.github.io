@@ -49,11 +49,6 @@
         top: 5px;
     }
 
-    img {
-        pointer-events: none;
-    }
-
-
 
     .aboutMeContent * {
     display: grid;
@@ -75,6 +70,15 @@
         margin: auto;
         float: none;
     }
+
+    .certImages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        pointer-events: none;
+    }
+
   
   }
 
@@ -129,12 +133,12 @@
 }
 
 #linkedin{
-    width: 35%;
+    width: 25%;
     border-radius: 20px;
 }
 
 #linkedin:hover{
-    width: 43%;
+    width: 29%;
     border-radius: 20px;
     transition-duration: 0.4s;
 }
@@ -416,14 +420,15 @@ div.nav a:hover {
     margin: auto;
 }
 
-.certImages img{
+.certImages img {
     border: 3px solid black;
     width: 20%;
-    margin: 2rem;
+    margin: 3rem;
+    transition-duration: 1s;
 }
 
 .certImages img:hover{
-    width: 22%;
+    flex-grow: 0.5;
     border: 5px solid tomato;
     transition-duration: 1s;
 }

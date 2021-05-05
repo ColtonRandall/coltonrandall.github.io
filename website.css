@@ -86,6 +86,10 @@
 @media screen and (min-width: 1024px) {
 
     /* Tablet screen */
+    #background{
+        width: fit-content;
+        height: 100%;
+    }
     
 }
 
@@ -103,64 +107,65 @@
 
 #mainphoto{
     display: flex;
-    align-content: center;
+    justify-content: center;
     width: 11%;
     border-radius: 100%;
     margin: auto;
     border: 3px solid black;
+    margin-top: 5%;
 }
 
 
 /* icon links */
 .iconLinks{
     margin: auto;
-    margin-top: 3%;
+    margin-top: 5%;
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
-    place-items: center;
+    
 }
 
 #cvicon{
-    width: 12%;
+    width: 15%;
 }
 
 #cvicon:hover{
-    width: 17%;
+    width: 20%;
     transition-duration: 0.4s;
     
 }
 
 #linkedin{
-    width: 25%;
+    width: 20%;
     border-radius: 20px;
 }
 
 #linkedin:hover{
-    width: 29%;
+    width: 25%;
     border-radius: 20px;
     transition-duration: 0.4s;
 }
 
 #github{
-    width: 23%;
+    width: 25%;
 }
 
 
 #github:hover{
-    width: 28%;
+    width: 30%;
     transition-duration: 0.4s;
 }
 
 #gmail{
-    /* position: relative;
-    top: 8px; */
+    position: relative;
+    top: 8px;
     width: 19%;
 }
 
 #gmail:hover{
-    width: 23%;
+    width: 24%;
     transition-duration: 0.4s;
 }
 
@@ -173,7 +178,7 @@
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    font-size: 15pt;
+    font-size: 18pt;
     background-color: var(--nav-colour);
     color:lightgray;
     border-radius: 10px;
@@ -375,7 +380,7 @@ div.nav a:hover {
 }
 
 #otagoGradIMG{
-    width: 35%;
+    width: 40%;
     box-shadow: 5px 5px 5px #333;
     border-radius: 10px;
 }
@@ -418,17 +423,21 @@ div.nav a:hover {
     justify-content:space-evenly;
     flex-wrap:wrap;
     margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .certImages img {
     border: 3px solid black;
     width: 20%;
-    margin: 3rem;
+    margin: 1rem;
     transition-duration: 1s;
 }
 
 .certImages img:hover{
-    flex-grow: 0.5;
+    padding: 0;
+    margin: 0;
+    flex-grow:2;
     border: 5px solid tomato;
     transition-duration: 1s;
 }
@@ -439,7 +448,6 @@ div.nav a:hover {
     text-align: justify;
     padding-bottom: 5%;
     padding-top: 10%;
-    
 }
 
 hr {

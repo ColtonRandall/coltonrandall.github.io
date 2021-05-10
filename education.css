@@ -1,0 +1,73 @@
+
+/* * { border: 1px solid white };  */
+
+:root {
+    --text-colour: aliceblue; 
+    --nav-colour: #333;
+  }
+
+ /* fill the whole page  */
+ html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'exo2';
+  }
+
+  body {
+      color: var(--text-colour);
+      font-weight: lighter;
+  }
+
+
+  /* --------------------------------------------- */
+/* FONTS */
+
+@font-face {
+    font-family: 'exo2';
+    src: url(./website_attachments/Exo2-VariableFont_wght.ttf);
+}
+
+
+/* --------------------------------------------- */
+/* MAIN IMAGES */
+
+#background{
+    width: 100%;
+    background-size:cover;
+    z-index: -3;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+/* --------------------------------------------- */
+/* CONTENT */
+
+/* adds style to nav bar */
+.nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 16pt;
+    background-color: var(--nav-colour);
+    color:lightgray;
+    border-radius: 10px;
+    margin-left: 5%;
+    padding-bottom: 2px;
+    z-index: 3;
+    width: 90%;
+    top: 10px;
+}
+
+.nav * {
+    color: var(--text-colour);
+    text-decoration: none;
+}
+
+/* when you hovor over nav bar each div turns white */
+div.nav a:hover {
+    color: tomato;
+  }
+

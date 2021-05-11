@@ -29,7 +29,6 @@
 
 
 /* --------------------------------------------- */
-/* MAIN IMAGES */
 
 #background{
     width: 100%;
@@ -69,5 +68,9 @@
 /* when you hovor over nav bar each div turns white */
 div.nav a:hover {
     color: tomato;
+  }
+
+  h3 {
+      text-align: center;
   }
 

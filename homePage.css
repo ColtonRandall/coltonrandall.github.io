@@ -363,6 +363,10 @@ hr {
         height: 100%;
     }
 
+    #title{
+        /* margin-top: 40%; */
+    }
+
     #mainphoto{
         width: 30%;
     }
@@ -384,15 +388,23 @@ hr {
     }
 
     .nav {
+        position: relative;
+        flex-direction: column;
         z-index: 4;
-        width: 90%;
+        width: 75%;
         font-size: 12pt;
-        position: sticky;
         top: 5px;
+        margin: auto;
     }
 
 
-    /* .coleNanook .Rwanda1Div .Rwanda2Div .flyingDiv */
+
+    .nav * {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+
     
     .coleNanook {
         grid-template-columns: 1fr;

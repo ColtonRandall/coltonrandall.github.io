@@ -39,11 +39,10 @@
     left: 0;
 }
 
+
 #mainphoto{
-    display: flex;
-    justify-content: center;
-    width: 11%;
-    border-radius: 100%;
+    width: 40%;
+    border-radius: 20%;
     margin: auto;
     border: 3px solid black;
     margin-top: 5%;
@@ -53,12 +52,14 @@
 /* icon links */
 .iconLinks{
     margin: auto;
-    margin-top: 5%;
-    width: 80%;
+    margin-top: 7%;
+    width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center; 
 }
+
+
 
 #cvicon{
     width: 15%;
@@ -93,7 +94,7 @@
 
 #gmail{
     position: relative;
-    top: 8px;
+    top: 3px;
     width: 19%;
 }
 
@@ -109,8 +110,7 @@
 .nav{
     position: fixed;
     display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+    justify-content:space-evenly;
     font-size: 14pt;
     background-color: var(--nav-colour);
     color:lightgray;
@@ -125,6 +125,7 @@
 .nav * {
     color: var(--text-colour);
     text-decoration: none;
+    
 }
 
 /* when you hovor over nav bar each div turns white */
@@ -132,24 +133,39 @@ div.nav a:hover {
     color: tomato;
   }
 
+#header {
+    margin-top: 10%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: auto;
+    width: 80%;
+}
+
 
 #title{
-
     color: var(--text-colour);
     text-align: center;
     font-size: 50pt;
-    font-weight: 600;
-    padding: 2%;
+    font-weight: 500;
     margin: auto;
 }
 
 #subTitle{
     color: var(--text-colour);
     text-align: center;
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: 500;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin: auto;
+}
+
+#location {
+
+    color: var(--text-colour);
+    text-align: center;
+    font-size: 13pt;
+    font-weight: 500;
+    margin: auto;
 
 }
 
@@ -363,8 +379,14 @@ hr {
         height: 100%;
     }
 
-    #title{
-        /* margin-top: 40%; */
+    #header {
+        grid-template-columns: 1fr;
+    }
+
+    #header p {
+        padding-top: 5%;
+        font-size: 12pt;
+        text-align: center;
     }
 
     #mainphoto{
@@ -400,8 +422,8 @@ hr {
 
 
     .nav * {
-        margin-top: 5px;
-        margin-bottom: 5px;
+        padding-bottom: 5px;
+        text-align: center;
     }
 
 

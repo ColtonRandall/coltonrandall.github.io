@@ -62,45 +62,46 @@
 
 
 #cvicon{
-    width: 15%;
+    width: 20%;
 }
 
 #cvicon:hover{
-    width: 20%;
-    transition-duration: 0.4s;
+    width: 27%;
+    transition-duration: 0.5s;
     
 }
 
 #linkedin{
-    width: 20%;
+    width: 25%;
     border-radius: 20px;
 }
 
 #linkedin:hover{
-    width: 25%;
+    width: 33%;
     border-radius: 20px;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
 }
 
 #github{
-    width: 25%;
+    width: 30%;
 }
 
 
 #github:hover{
-    width: 30%;
-    transition-duration: 0.4s;
+    width: 40%;
+    transition-duration: 0.5s;
+    
 }
 
 #gmail{
     position: relative;
     top: 3px;
-    width: 19%;
+    width: 24%;
 }
 
 #gmail:hover{
-    width: 24%;
-    transition-duration: 0.4s;
+    width: 33%;
+    transition-duration: 0.5s;
 }
 
 /* --------------------------------------------- */

@@ -49,6 +49,7 @@
     border: 3px solid rgb(156, 153, 153);
     box-shadow: var(--shadow);
     margin-top: 10%;
+    filter:brightness(95%);
 }
 
 

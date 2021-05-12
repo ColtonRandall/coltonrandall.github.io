@@ -52,7 +52,7 @@
 /* icon links */
 .iconLinks{
     margin: auto;
-    margin-top: 5%;
+    margin-top: 7%;
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -60,7 +60,7 @@
 }
 
 .iconLinks * {
-    padding: 5px;
+    padding: 4px;
 }
 
 
@@ -92,8 +92,9 @@
 }
 
 #github{
-    width: 40%;
+    width: 45%;
     top: 5px;
+    padding: 1px;
 }
 
 
@@ -108,7 +109,7 @@
 
 #gmail{
     position: relative;
-    top: 5px;
+    top: 4px;
     width: 30%;
     padding: 10px;
    
@@ -129,7 +130,7 @@
     position: fixed;
     display: flex;
     justify-content:space-evenly;
-    font-size: 14pt;
+    font-size: 18pt;
     background-color: var(--nav-colour);
     color:lightgray;
     border-radius: 10px;
@@ -172,7 +173,7 @@ div.nav a:hover {
 #subTitle{
     color: var(--text-colour);
     text-align: center;
-    font-size: 13pt;
+    font-size: 14pt;
     font-weight: 500;
     margin: auto;
 }
@@ -236,7 +237,7 @@ div.nav a:hover {
 }
 
 .aboutMeContent * {
-    font-size: 14pt;
+    font-size: 16pt;
     text-align: justify;
 
 }

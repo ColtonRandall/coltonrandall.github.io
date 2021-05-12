@@ -1,10 +1,10 @@
 
-/* * { border: 1px solid white };  */
+* { border: 1px solid white }; 
 
 :root {
     --text-colour: aliceblue; 
     --nav-colour: #333;
-    --shadow: 1px 1px 3px black;
+    --shadow: 2px 2px 3px black;
     --textShadow: 2px 2px 3px black;
   }
 
@@ -70,8 +70,7 @@
 
 
 #cvicon{
-    width: 25%;
-
+    width: 29%;
 }
 
 #cvicon:hover{
@@ -84,7 +83,7 @@
 }
 
 #linkedin{
-    width: 35%;
+    width: 37%;
 }
 
 #linkedin:hover{
@@ -99,8 +98,6 @@
 
 #github{
     width: 45%;
-    top: 5px;
-    padding: 1px;
 }
 
 
@@ -117,7 +114,7 @@
 #gmail{
     position: relative;
     top: 4px;
-    width: 30%;
+    width: 33%;
     padding: 10px;
    
 }
@@ -204,7 +201,7 @@ div.nav a:hover {
 /* SCROLL ICON */
 
 #scrollDiv{
-    margin: 150px;
+    margin-top: 10%;
 }
 
 #scroll {
@@ -232,16 +229,56 @@ div.nav a:hover {
 
 #scroll{
     position: relative;
-    width: 5%;
+    width: 3%;
     margin: auto;
-    display: grid;
-    align-content: center;
-    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    bottom: 125px;
 
 }
 
 
+/* ------- ABOUT ME BUTTON ------ */
+
+#buttonDiv {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#aboutMeButton{
+    background-color: rgb(201, 195, 195);
+    color: black;
+    font-family: 'exo2';
+    font-size: 2vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px; 
+    opacity: 0.7;
+}
+
+#aboutMeButton:hover{
+    color: whitesmoke;
+    background-color: #333;
+    transition-duration: 0.4s;
+    border: 2px solid tomato;
+    box-shadow: 3px 3px 4px black;
+    opacity: 1;
+}
+
+
+#aboutMeButton:active {
+    background-color: tomato;
+    transform: translateY(4px);
+  }
+
+
 /* ------- ABOUT ME CONTENT ------ */
+#ABOUTME{
+    display: none;
+    transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;
+}
+
 #aboutmeTitle{
     text-align: center;
     font-size: 35pt;

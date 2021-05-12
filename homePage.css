@@ -52,56 +52,73 @@
 /* icon links */
 .iconLinks{
     margin: auto;
-    margin-top: 7%;
+    margin-top: 5%;
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center; 
 }
 
+.iconLinks * {
+    padding: 5px;
+}
+
 
 
 #cvicon{
-    width: 20%;
+    width: 25%;
+
 }
 
 #cvicon:hover{
-    width: 27%;
-    transition-duration: 0.5s;
-    
+    /* width: 27%; */
+    transition-duration: 0.4s;
+    border: 2px solid tomato;
+    /* padding: 5px; */
+    border-radius: 5px;
 }
 
 #linkedin{
-    width: 25%;
-    border-radius: 20px;
+    width: 35%;
 }
 
 #linkedin:hover{
-    width: 33%;
+    /* width: 33%; */
     border-radius: 20px;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
+    border: 2px solid tomato;
+    /* padding: 5px; */
+    border-radius: 5px;
 }
 
 #github{
-    width: 30%;
+    width: 40%;
+    top: 5px;
 }
 
 
 #github:hover{
-    width: 40%;
-    transition-duration: 0.5s;
+    /* width: 40%; */
+    transition-duration: 0.4s;
+    border: 2px solid tomato;
+    /* padding: 3px; */
+    border-radius: 5px;
     
 }
 
 #gmail{
     position: relative;
-    top: 3px;
-    width: 24%;
+    top: 5px;
+    width: 30%;
+    padding: 10px;
+   
 }
 
 #gmail:hover{
-    width: 33%;
-    transition-duration: 0.5s;
+    /* width: 33%; */
+    transition-duration: 0.4s;
+    border: 2px solid tomato;
+    border-radius: 5px;
 }
 
 /* --------------------------------------------- */

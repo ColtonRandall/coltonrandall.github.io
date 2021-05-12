@@ -4,6 +4,8 @@
 :root {
     --text-colour: aliceblue; 
     --nav-colour: #333;
+    --shadow: 1px 1px 3px black;
+    --textShadow: 2px 2px 3px black;
   }
 
  /* fill the whole page  */
@@ -44,8 +46,9 @@
     width: 40%;
     border-radius: 20%;
     margin: auto;
-    border: 3px solid black;
-    margin-top: 5%;
+    border: 3px solid rgb(156, 153, 153);
+    box-shadow: var(--shadow);
+    margin-top: 10%;
 }
 
 
@@ -73,7 +76,8 @@
 #cvicon:hover{
     /* width: 27%; */
     transition-duration: 0.4s;
-    border: 2px solid tomato;
+    border: 3px outset tomato;
+    box-shadow: var(--shadow);
     /* padding: 5px; */
     border-radius: 5px;
 }
@@ -86,7 +90,8 @@
     /* width: 33%; */
     border-radius: 20px;
     transition-duration: 0.4s;
-    border: 2px solid tomato;
+    border: 3px outset tomato;
+    box-shadow: var(--shadow);
     /* padding: 5px; */
     border-radius: 5px;
 }
@@ -101,7 +106,8 @@
 #github:hover{
     /* width: 40%; */
     transition-duration: 0.4s;
-    border: 2px solid tomato;
+    border: 3px outset tomato;
+    box-shadow: var(--shadow);
     /* padding: 3px; */
     border-radius: 5px;
     
@@ -118,7 +124,8 @@
 #gmail:hover{
     /* width: 33%; */
     transition-duration: 0.4s;
-    border: 2px solid tomato;
+    border: 3px outset tomato;
+    box-shadow: var(--shadow);
     border-radius: 5px;
 }
 
@@ -132,6 +139,7 @@
     justify-content:space-evenly;
     font-size: 18pt;
     background-color: var(--nav-colour);
+    box-shadow: var(--shadow);
     color:lightgray;
     border-radius: 10px;
     margin-left: 5%;
@@ -159,6 +167,7 @@ div.nav a:hover {
     grid-template-columns: 1fr 1fr;
     grid-area: auto;
     width: 80%;
+    text-shadow: 2px 2px 3px black;
 }
 
 
@@ -227,6 +236,7 @@ div.nav a:hover {
     display: grid;
     align-content: center;
     bottom: 100px;
+
 }
 
 
@@ -234,6 +244,7 @@ div.nav a:hover {
 #aboutmeTitle{
     text-align: center;
     font-size: 35pt;
+    text-shadow: var(--textShadow);
 }
 
 .aboutMeContent * {
@@ -265,7 +276,7 @@ div.nav a:hover {
 #coleNanookIMG {
     width: 80%;
     margin: 0;
-    box-shadow: 5px 5px 3px #333;
+    box-shadow: var(--shadow);
     border-radius: 30px;
 }
 
@@ -284,7 +295,7 @@ div.nav a:hover {
 #rwanda1IMG{
     width: 75%;
     margin: auto;
-    box-shadow: 5px 5px 5px #333;
+    box-shadow: var(--shadow);
     border-radius: 30px;
 }
 
@@ -302,7 +313,7 @@ div.nav a:hover {
 #rwanda2IMG{
     margin: auto;
     width: 70%;
-    box-shadow: 5px 5px px #333;
+    box-shadow: var(--shadow);
     border-radius: 10px;
 }
 
@@ -322,13 +333,13 @@ div.nav a:hover {
 
 #otagoIMG{
     width: 30%;
-    box-shadow: 5px 5px 3px #333;
+    box-shadow: var(--shadow);
     border-radius: 10px;
 }
 
 #otagoGradIMG{
     width: 40%;
-    box-shadow: 5px 5px 5px #333;
+    box-shadow: var(--shadow);
     border-radius: 10px;
 }
 
@@ -353,7 +364,7 @@ div.nav a:hover {
 #flyingIMG{
     width: 50%;
     margin: auto;
-    box-shadow: 5px 5px 5px #333;
+    box-shadow: var(--shadow);
     border-radius: 10px;
 }
 
@@ -368,7 +379,7 @@ div.nav a:hover {
 
 .certImages img {
     border: 3px solid black;
-    box-shadow: 3px 3px 3px black;
+    box-shadow: var(--shadow);
     width: 20%;
     margin: 1rem;
     transition-duration: 1s;
@@ -377,14 +388,14 @@ div.nav a:hover {
 .certImages img:hover{
     padding: 0;
     margin: 0;
-    flex-grow:1;
+    flex-grow:0.75;
     border: 5px solid tomato;
     transition-duration: 1s;
 }
 
 
 hr {
-    width: 80%;
+    width: 85%;
 }
 
 /* -------------------------------------------- */

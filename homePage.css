@@ -46,7 +46,7 @@
     width: 40%;
     border-radius: 20%;
     margin: auto;
-    border: 3px solid rgb(156, 153, 153);
+    border: 3px solid rgb(66, 66, 66);
     box-shadow: var(--shadow);
     margin-top: 10%;
     filter:brightness(95%);
@@ -201,7 +201,7 @@ div.nav a:hover {
 /* SCROLL ICON */
 
 #scrollDiv{
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 #scroll {
@@ -233,7 +233,7 @@ div.nav a:hover {
     margin: auto;
     display: flex;
     justify-content: center;
-    bottom: 125px;
+    bottom: 80px;
 
 }
 
@@ -249,8 +249,10 @@ div.nav a:hover {
 #aboutMeButton{
     background-color: rgb(201, 195, 195);
     color: black;
+    width: 25%;
+    font-weight: 500;
     font-family: 'exo2';
-    font-size: 2vh;
+    font-size: 2.5vh;
     border: 2px solid black;
     border-radius: 10px;
     padding: 10px; 
@@ -440,7 +442,15 @@ hr {
 
 /* MOBILE APP */
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
+
+   #header img {
+    box-shadow: var(--shadow);
+    }
+
+    #ABOUTME img {
+        box-shadow: var(--shadow);
+    }
 
     #background{
         width: fit-content;
@@ -464,7 +474,7 @@ hr {
     .iconLinks{
         display: flex;
         flex-direction: column;
-        padding-left: 20%;      
+        padding-left: 23%;      
     }
 
     .iconLinks * {
@@ -496,6 +506,17 @@ hr {
     .nav * {
         padding-bottom: 5px;
         text-align: center;
+    }
+
+    #aboutMeButton{
+        background-color: #333;
+        border: 2px solid tomato;
+        box-shadow: var(--shadow);
+        color: whitesmoke;
+        width: 40%;
+        font-size: 10pt;
+        padding: 10px; 
+        opacity: 1;
     }
 
 
@@ -610,11 +631,20 @@ hr {
   }
 
   /* Remove pointer events for certificates on tablet */
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
 
     #background{
         width: fit-content;
         height: 100%;
+    }
+
+    #aboutMeButton{
+        width: 40%;
+        font-size: 3vh;
+    }
+
+    #scroll {
+        display: none;
     }
 
     .certImages > img {

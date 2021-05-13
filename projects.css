@@ -40,6 +40,9 @@
 }
 
 
+
+
+
 /* --------------------------------------------- */
 /* CONTENT */
 
@@ -70,7 +73,17 @@ div.nav a:hover {
     color: tomato;
   }
 
-  h3 {
+h1 {
       text-align: center;
-  }
+      padding: 200px;
+}
 
+#githubProf {
+    color: tomato;
+    text-decoration: none;
+}
+
+#githubProf:hover {
+    color: springgreen;
+    text-decoration: underline;
+}

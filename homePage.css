@@ -1,5 +1,5 @@
 
-/* * { border: 1px solid white };  */
+* { border: 1px solid white }; 
 
 :root {
     --text-colour: aliceblue; 
@@ -464,17 +464,21 @@ hr {
     .iconLinks{
         display: flex;
         flex-direction: column;
-        text-align: center;
+        padding-left: 20%;      
     }
 
     .iconLinks * {
         padding-top: 5%;
         padding-bottom: 5%;
+        width: 50%;
+        text-align: center;
+        justify-content: center;
     }
 
 
     #scroll{
-        width: 30%;
+        display: none;
+        width: 5%;
     }
 
     .nav {

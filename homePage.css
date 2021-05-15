@@ -336,6 +336,7 @@ div.nav a:hover {
     margin: auto;
     box-shadow: var(--shadow);
     border-radius: 30px;
+    filter: contrast(130%);
 }
 
 

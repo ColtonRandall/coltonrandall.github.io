@@ -1,5 +1,6 @@
 
 // ---- Button to show about me content on click ----
+
 function showAboutme() {
 
     // get the div to manipulate

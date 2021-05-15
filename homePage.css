@@ -472,7 +472,7 @@ hr {
   }
 
 /* Mobile screen size */
-@media (max-width: 800px) {
+@media (max-width: 750px) {
 
    #header img {
     box-shadow: var(--shadow);
@@ -489,6 +489,10 @@ hr {
 
     #header {
         grid-template-columns: 1fr;
+        
+    }
+    #title{
+        font-size: 11vh;
     }
 
     #header p {

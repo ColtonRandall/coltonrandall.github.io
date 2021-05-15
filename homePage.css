@@ -43,7 +43,7 @@
 
 
 #mainphoto{
-    width: 40%;
+    width: 15vw;
     border-radius: 20%;
     margin: auto;
     border: 3px solid rgb(66, 66, 66);
@@ -51,6 +51,26 @@
     margin-top: 10%;
     filter:brightness(95%);
 }
+
+
+
+/* Main photo fadein animation */
+#mainphoto {
+    animation: mainImageFadeIn ease 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode:both;
+
+}
+@keyframes mainImageFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 
 /* icon links */
@@ -101,11 +121,9 @@
 
 
 #github:hover{
-    /* width: 40%; */
     transition-duration: 0.4s;
     border: 3px outset tomato;
     box-shadow: var(--shadow);
-    /* padding: 3px; */
     border-radius: 5px;
     
 }
@@ -119,7 +137,6 @@
 }
 
 #gmail:hover{
-    /* width: 33%; */
     transition-duration: 0.4s;
     border: 3px outset tomato;
     box-shadow: var(--shadow);
@@ -186,12 +203,12 @@ div.nav a:hover {
     0% {
         opacity: 0;
         color: tomato;
-        font-size: 7vh;
+        font-size: 4vw;
     }
     100% {
         opacity: 1;
         color: whitesmoke;
-        font-size: 12vh;
+        font-size: 9vw;
         text-shadow: 5px 5px 7px black;
     }
 }
@@ -521,16 +538,15 @@ hr {
         height: 100%;
     }
    
-   #header img {
+   #mainphoto {
     box-shadow: var(--shadow);
-    width: 40%;
+    width: 25vw;
     }
 
     #ABOUTME img {
         box-shadow: var(--shadow);
     }
-
-   
+  
 
     #header {
         grid-template-columns: 1fr;
@@ -543,7 +559,8 @@ hr {
     }
 
     #title {
-        font-size: 40pt;
+        text-shadow: 5px 5px 7px black;
+        text-align: center;
     }
 
 

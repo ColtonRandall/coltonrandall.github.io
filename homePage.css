@@ -4,7 +4,7 @@
 :root {
     --text-colour: aliceblue; 
     --nav-colour: #333;
-    --shadow: 2px 2px 3px black;
+    --shadow: 4px 4px 6px black;
     --textShadow: 2px 2px 3px black;
   }
 
@@ -287,7 +287,7 @@ div.nav a:hover {
 }
 
 .aboutMeContent * {
-    font-size: 16pt;
+    font-size: 20pt;
     text-align: justify;
     text-shadow: var(--textShadow);
     font-weight: 400;
@@ -307,19 +307,18 @@ div.nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 5%;
+    margin: auto;
 }
 
 #coleNanookContent {
     width: 100%;
-    margin: 0;
 }
 #coleNanookIMG {
     width: 80%;
-    margin: 0;
+    margin: auto;
     box-shadow: var(--shadow);
     border-radius: 30px;
 }
-
 
 /* --- RWANDA1 --- */
 .Rwanda1Div{
@@ -355,6 +354,26 @@ div.nav a:hover {
     width: 70%;
     box-shadow: var(--shadow);
     border-radius: 10px;
+}
+
+#extraPhotos{
+    display: flex;
+    padding: 5px;
+}
+
+#elephant {
+    margin: auto;
+    width: 25%;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+
+#kenya {
+    margin: auto;
+    width: 50%;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    filter: contrast(110%);
 }
 
 
@@ -442,17 +461,18 @@ hr {
 
 /* TABLET */
  /* Remove pointer events for certificates on tablet */
- @media (max-width: 1024px) {
-
-    #mainphoto{
-        width: 50%;
-    }
+ @media (max-width: 1300px) {
 
     #background{
         width: 100%;
         height: 100%;
     }
 
+    #mainphoto{
+        width: 50%;
+    }
+
+  
     #aboutMeButton{
         width: 40%;
         font-size: 3vh;
@@ -473,6 +493,11 @@ hr {
 
 @media (max-width: 750px) {
 
+
+    #background{
+        width: 100%;
+        height: 100%;
+    }
    
    #header img {
     box-shadow: var(--shadow);
@@ -483,10 +508,7 @@ hr {
         box-shadow: var(--shadow);
     }
 
-    #background{
-        width: 100%;
-        height: 100%;
-    }
+   
 
     #header {
         grid-template-columns: 1fr;
@@ -587,6 +609,24 @@ hr {
         place-content: center;
     }
 
+    #extraPhotos{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    #kenya {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    #elephant {
+        width: 50%;
+        margin-top: 40px;
+    }
+
 
 
     .Rwanda2Div {
@@ -610,23 +650,24 @@ hr {
         align-items: center;
         }
 
-    #otagoImages * {
-        display: grid;
-        grid-template-columns: 2fr;
-        margin: 0;
-        width: 50%;
+    #otagoImages {
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
     }
-
-   
     
     #otagoIMG {
+        width: 60%;
         margin-bottom: 5%;
         margin-top: 5%;
+        margin-left: 90px;
     }
 
     #otagoGradIMG {
+        width: 70%;
         margin-bottom: 5%;
         margin-top: 5%;
+        margin-left: 65px;
     }
 
 

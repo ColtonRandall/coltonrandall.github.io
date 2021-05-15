@@ -493,13 +493,13 @@ hr {
     }
 
     #title{
-        font-size: 12vh;
+        font-size: 50pt;
     }
   
 
     #header p {
         padding-top: 5%;
-        font-size: 12pt;
+        font-size: 14pt;
         text-align: center;
     }
 
@@ -516,7 +516,7 @@ hr {
     .iconLinks * {
         padding-top: 5%;
         padding-bottom: 5%;
-        width:60%;
+        width: 60%;
         text-align: center;
         justify-content: center;
     }

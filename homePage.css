@@ -186,12 +186,12 @@ div.nav a:hover {
     0% {
         opacity: 0;
         color: tomato;
-        font-size: 40pt;
+        font-size: 7vh;
     }
     100% {
         opacity: 1;
         color: whitesmoke;
-        font-size: 80pt;
+        font-size: 12vh;
         text-shadow: 5px 5px 7px black;
     }
 }

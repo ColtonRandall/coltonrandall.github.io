@@ -43,7 +43,7 @@
 
 
 #mainphoto{
-    width: 20vw;
+    width: 30%;
     border-radius: 20%;
     margin: auto;
     border: 3px solid rgb(66, 66, 66);
@@ -194,7 +194,7 @@ div.nav a:hover {
 
 /* Title fadein animation */
 #title {
-    animation: titleFadeIn ease 4s;
+    animation: titleFadeIn ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode:both;
 
@@ -208,7 +208,7 @@ div.nav a:hover {
     100% {
         opacity: 1;
         color: whitesmoke;
-        font-size: 16vw;
+        font-size: 6vw;
         text-shadow: 5px 5px 7px black;
     }
 }

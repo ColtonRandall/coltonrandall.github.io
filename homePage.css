@@ -68,7 +68,6 @@
 }
 
 
-
 #cvicon{
     width: 29%;
 }
@@ -476,6 +475,7 @@ hr {
    
    #header img {
     box-shadow: var(--shadow);
+    width: 40%;
     }
 
     #ABOUTME img {
@@ -497,20 +497,22 @@ hr {
         text-align: center;
     }
 
-    #mainphoto img{
-        width: 30%;
+    #title {
+        font-size: 40pt;
     }
+
 
     .iconLinks{
         display: flex;
         flex-direction: column;
-        padding-left: 23%;      
+        padding-left: 17%;    
+        padding-top: 3%;  
     }
 
     .iconLinks * {
-        padding-top: 5%;
+        padding-top: 4%;
         padding-bottom: 5%;
-        width: 50%;
+        width: 60%;
         text-align: center;
         justify-content: center;
     }
@@ -531,8 +533,6 @@ hr {
         margin: auto;
     }
 
-
-
     .nav * {
         padding-bottom: 10px;
         padding-top: 10px;
@@ -544,8 +544,8 @@ hr {
         border: 2px solid tomato;
         box-shadow: var(--shadow);
         color: whitesmoke;
-        width: 60%;
-        font-size: 16pt;
+        width: 70%;
+        font-size: 15pt;
         padding: 10px; 
         opacity: 1;
     }

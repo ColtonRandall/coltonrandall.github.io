@@ -43,7 +43,7 @@
 
 
 #mainphoto{
-    width: 15vw;
+    width: 20vw;
     border-radius: 20%;
     margin: auto;
     border: 3px solid rgb(66, 66, 66);
@@ -208,7 +208,7 @@ div.nav a:hover {
     100% {
         opacity: 1;
         color: whitesmoke;
-        font-size: 11vw;
+        font-size: 16vw;
         text-shadow: 5px 5px 7px black;
     }
 }
@@ -691,6 +691,7 @@ hr {
 
     #otagoImages {
         flex-direction: column;
+        justify-content: center;
         margin: auto;
         width: 100%;
     }

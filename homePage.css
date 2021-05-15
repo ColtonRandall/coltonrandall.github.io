@@ -172,7 +172,7 @@ div.nav a:hover {
 #title{
     color: var(--text-colour);
     text-align: center;
-    font-size: 50pt;
+    font-size: 80pt;
     font-weight: 500;
     margin: auto;
 }
@@ -440,10 +440,40 @@ hr {
 
 /* -------------------------------------------- */
 
+/* TABLET */
+ /* Remove pointer events for certificates on tablet */
+ @media (max-width: 1024px) {
+
+    #mainphoto{
+        width: 50%;
+    }
+
+    #background{
+        width: 100%;
+        height: 100%;
+    }
+
+    #aboutMeButton{
+        width: 40%;
+        font-size: 3vh;
+    }
+
+    #scroll {
+        display: none;
+    }
+
+    .certImages > img {
+        pointer-events: none;
+
+    }
+
+  }
+
 /* MOBILE APP */
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
 
+   
    #header img {
     box-shadow: var(--shadow);
     }
@@ -453,7 +483,7 @@ hr {
     }
 
     #background{
-        width: fit-content;
+        width: 100%;
         height: 100%;
     }
 
@@ -463,11 +493,11 @@ hr {
 
     #header p {
         padding-top: 5%;
-        font-size: 12pt;
+        font-size: 14pt;
         text-align: center;
     }
 
-    #mainphoto{
+    #mainphoto img{
         width: 30%;
     }
 
@@ -496,7 +526,7 @@ hr {
         flex-direction: column;
         z-index: 4;
         width: 75%;
-        font-size: 12pt;
+        font-size: 16pt;
         top: 5px;
         margin: auto;
     }
@@ -504,7 +534,8 @@ hr {
 
 
     .nav * {
-        padding-bottom: 5px;
+        padding-bottom: 10px;
+        padding-top: 10px;
         text-align: center;
     }
 
@@ -513,8 +544,8 @@ hr {
         border: 2px solid tomato;
         box-shadow: var(--shadow);
         color: whitesmoke;
-        width: 40%;
-        font-size: 10pt;
+        width: 60%;
+        font-size: 16pt;
         padding: 10px; 
         opacity: 1;
     }
@@ -630,26 +661,4 @@ hr {
   
   }
 
-  /* Remove pointer events for certificates on tablet */
-  @media (max-width: 950px) {
-
-    #background{
-        width: fit-content;
-        height: 100%;
-    }
-
-    #aboutMeButton{
-        width: 40%;
-        font-size: 3vh;
-    }
-
-    #scroll {
-        display: none;
-    }
-
-    .certImages > img {
-        pointer-events: none;
-
-    }
-
-  }
+ 

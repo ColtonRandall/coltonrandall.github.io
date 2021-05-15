@@ -171,7 +171,6 @@ div.nav a:hover {
 #title{
     color: var(--text-colour);
     text-align: center;
-    font-size: 80pt;
     font-weight: 500;
     margin: auto;
 }
@@ -181,12 +180,13 @@ div.nav a:hover {
     animation: titleFadeIn ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode:both;
+
 }
 @keyframes titleFadeIn {
     0% {
         opacity: 0;
         color: tomato;
-        font-size: 50pt;
+        font-size: 40pt;
     }
     100% {
         opacity: 1;

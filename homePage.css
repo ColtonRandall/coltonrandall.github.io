@@ -491,6 +491,10 @@ hr {
         grid-template-columns: 1fr;
         
     }
+
+    #title{
+        font-size: 12vh;
+    }
   
 
     #header p {
@@ -500,7 +504,7 @@ hr {
     }
 
     #mainphoto{
-        width: 25vh;
+        width: 20vh;
     }
 
     .iconLinks{

@@ -74,7 +74,7 @@
 
 #cvicon:hover{
     /* width: 27%; */
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     border: 3px outset tomato;
     box-shadow: var(--shadow);
     /* padding: 5px; */
@@ -175,6 +175,27 @@ div.nav a:hover {
     font-weight: 500;
     margin: auto;
 }
+
+/* Title fadein animation */
+#title {
+    animation: titleFadeIn ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode:both;
+}
+@keyframes titleFadeIn {
+    0% {
+        opacity: 0;
+        color: tomato;
+        font-size: 90pt;
+    }
+    100% {
+        opacity: 1;
+        color: whitesmoke;
+        font-size: 80pt;
+        text-shadow: 5px 5px 7px black;
+    }
+}
+
 
 #subTitle{
     color: var(--text-colour);

@@ -75,24 +75,24 @@ div.nav a:hover {
 
 h2 {
       text-align: center;
-      padding: 200px;
+      padding-top: 200px;
 }
 
-#githubProf {
+#gitHubLink{
     color: tomato;
     text-decoration: none;
 }
 
-#githubProf:hover {
+#gitHubLink:hover {
     color: springgreen;
     text-decoration: underline;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1024px) {
 
 
     #background{
-        width: fit-content;
+        width: 100%;
         height: 100%;
     }
     

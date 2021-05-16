@@ -562,6 +562,7 @@ hr {
    #mainphoto {
     box-shadow: var(--shadow);
     width: 40%;
+    margin-bottom: 15px;
     }
 
     #ABOUTME img {
@@ -573,9 +574,14 @@ hr {
         grid-template-columns: 1fr;
     }
 
-    #subtitle {
+    #location {
+        margin-top: 15px;
+        font-size: 12pt;
+    }
+
+    #subTitle {
         padding-top: 5%;
-        font-size: 14pt;
+        font-size: 12pt;
         text-align: center;
     }
 

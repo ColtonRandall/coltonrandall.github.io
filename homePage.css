@@ -43,7 +43,7 @@
 
 
 #mainphoto{
-    width: 30%;
+    width: 40%;
     border-radius: 20%;
     margin: auto;
     border: 3px solid rgb(66, 66, 66);
@@ -175,6 +175,7 @@ div.nav a:hover {
   }
 
 #header {
+    padding-top: 3%;
     margin-top: 10%;
     margin: auto;
     display: grid;
@@ -203,12 +204,12 @@ div.nav a:hover {
     0% {
         opacity: 0;
         color: tomato;
-        font-size: 4vw;
+        font-size: 12pt;
     }
     100% {
         opacity: 1;
         color: whitesmoke;
-        font-size: 6vw;
+        font-size: 80pt;
         text-shadow: 5px 5px 7px black;
     }
 }
@@ -466,6 +467,26 @@ div.nav a:hover {
     border-radius: 10px;
 }
 
+
+/* First solo video
+#firstSoloVideo{
+    text-align: center;    
+}
+
+#firstSoloVideo > p{
+    font-size: 14pt;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+video {
+    border: 3px solid tomato;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    margin: auto;
+} */
+
 .certImages {
     display: flex;
     justify-content:space-evenly;
@@ -528,7 +549,7 @@ hr {
 
   }
 
-/* MOBILE APP */
+/* ----------- MOBILE APP ---------- */
 
 @media (max-width: 750px) {
 
@@ -540,7 +561,7 @@ hr {
    
    #mainphoto {
     box-shadow: var(--shadow);
-    width: 30vw;
+    width: 40%;
     }
 
     #ABOUTME img {
@@ -552,7 +573,7 @@ hr {
         grid-template-columns: 1fr;
     }
 
-    #header p {
+    #subtitle {
         padding-top: 5%;
         font-size: 14pt;
         text-align: center;
@@ -561,6 +582,21 @@ hr {
     #title {
         text-shadow: 5px 5px 7px black;
         text-align: center;
+        font-size: 60pt;
+    }
+
+    @keyframes titleFadeIn {
+        0% {
+            opacity: 0;
+            color: tomato;
+            font-size: 9pt;
+        }
+        100% {
+            opacity: 1;
+            color: whitesmoke;
+            font-size: 50pt;
+            text-shadow: 5px 5px 7px black;
+        }
     }
 
 
@@ -725,6 +761,21 @@ hr {
         margin-top: 5%;
         place-content: center;
     }
+
+
+    /* Video */
+    /* #firstSoloVideo > p {
+        font-size: 12pt;
+        text-align: center;
+
+    }  */
+/* 
+    video {
+        width: 100%;
+        margin: auto;
+    } 
+ */
+
 
 
     .certImages {

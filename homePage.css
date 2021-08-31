@@ -1,5 +1,5 @@
 
-/* * { border: 1px solid white };  */
+* { border: 1px solid white }; 
 
 :root {
     --text-colour: aliceblue; 
@@ -497,6 +497,7 @@ video {
 }
 
 .certImages img {
+    position: relative;
     border: 3px solid black;
     box-shadow: var(--shadow);
     width: 20%;
@@ -507,8 +508,29 @@ video {
 .certImages img:hover{
     padding: 0;
     margin: 0;
-    flex-grow:0.75;
+    flex-grow:0.25;
     border: 5px solid tomato;
+    transition-duration: 1s;
+}
+
+#aws {
+    width: 70%;
+    padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#AWSdiv{
+    margin: auto;
+    align-content: center;
+    width:20rem; 
+    height:20rem; 
+    overflow: visible;
+}
+
+#aws:hover {
+    width: 80%;
     transition-duration: 1s;
 }
 

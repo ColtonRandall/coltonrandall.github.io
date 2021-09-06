@@ -61,7 +61,7 @@
     padding-bottom: 2px;
     z-index: 3;
     width: 100%;
-    /* top: 10px; */
+    top: 0;
 }
 
 .nav * {
@@ -79,17 +79,70 @@ h2 {
       padding-top: 200px;
 }
 
-#gitHubLink{
-    color: tomato;
-    text-decoration: none;
+.recentCerts{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
 
-#gitHubLink:hover {
-    color: springgreen;
-    text-decoration: underline;
+.recentCerts img {
+    position: relative;
+    margin: 1rem;
+    transition-duration: 1s;
 }
 
-@media (max-width: 1400px) {
+
+#javaPGcert, #webPGcert {
+    width: 30%;
+    border-color: black;
+    border-width: 2px;
+}
+
+#aws {
+    width: 15%;
+    height: 15%;
+    top: 60px;
+}
+
+
+.certImages {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap:wrap;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.certImages > img {
+    align-items: center;
+    position: relative;
+    border: 3px solid black;
+    box-shadow: var(--shadow);
+    width: 20%;
+    margin: 1rem;
+    transition-duration: 1s;
+}
+
+
+
+.certImages > img:hover {
+border: 5px solid tomato;
+}
+
+hr {
+    width: 85%;
+}
+
+/* -------------------------------------------- */
+
+/* TABLET */
+ /* Remove pointer events for certificates on tablet */
+ @media (max-width: 1400px) {
    
 
     #background{
@@ -97,9 +150,10 @@ h2 {
         height: 100%;
     }
 
-}
+  }
 
-@media (max-width: 1024px) {
+
+@media (max-width: 1000px){
 
     .nav {
         position: relative;
@@ -118,5 +172,41 @@ h2 {
         padding-top: 7px;
         text-align: center;
     }
+
+    .recentCerts {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     
+    #javaPGcert, #webPGcert {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+    
+    #aws {
+        width: 60%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 15%;
+    }
+
+.certImages {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.certImages > img {
+    width: 80%;
+    pointer-events: none;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+
+
+
+
+
+
 }

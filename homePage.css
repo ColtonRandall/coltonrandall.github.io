@@ -155,12 +155,12 @@
     background-color: var(--nav-colour);
     box-shadow: var(--shadow);
     color:lightgray;
-    border-radius: 10px;
-    margin-left: 5%;
+    /* border-radius: 10px; */
+    /* margin-left: 5%; */
     padding-bottom: 2px;
     z-index: 3;
-    width: 90%;
-    top: 10px;
+    width: 100%;
+    /* top: 10px; */
 }
 
 .nav * {
@@ -467,7 +467,7 @@ div.nav a:hover {
     border-radius: 10px;
 }
 
-
+/* 
 .certImages {
     display: flex;
     justify-content:space-evenly;
@@ -513,6 +513,42 @@ div.nav a:hover {
 #aws:hover {
     width: 80%;
     transition-duration: 1s;
+} */
+
+.toTop {
+    width: fit-content;
+    position: fixed;  
+    bottom: 20px;
+    right: 3px;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+  }
+  
+  #toTopText{
+      font-family: monospace;
+      font-size: 12pt;
+  }
+
+  #arrow {
+    width: 100px;
+}
+
+#arrow:hover {
+    animation: arrow 2s ease infinite;
+ }
+ 
+/* timeline of hover animation */
+@keyframes arrow {
+ 0% {
+ transform: translate(0);
+ }
+ 50% {
+ transform: translate(0,-25px);  
+}
+ 100% {
+     transform: translate(0);
+ }
 }
 
 
@@ -558,7 +594,7 @@ hr {
 
 /* ----------- MOBILE APP ---------- */
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
 
 
     #background{
@@ -642,6 +678,7 @@ hr {
         font-size: 16pt;
         top: 5px;
         margin: auto;
+        border-radius: 10px;
     }
 
     .nav * {
@@ -701,7 +738,6 @@ hr {
         flex-direction: column;
         margin: auto;
         width: 100%;
-
     }
 
     #kenya {

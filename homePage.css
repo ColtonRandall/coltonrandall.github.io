@@ -468,25 +468,6 @@ div.nav a:hover {
 }
 
 
-/* First solo video
-#firstSoloVideo{
-    text-align: center;    
-}
-
-#firstSoloVideo > p{
-    font-size: 14pt;
-    text-align: center;
-    text-decoration: underline;
-}
-
-
-video {
-    border: 3px solid tomato;
-    box-shadow: var(--shadow);
-    border-radius: 8px;
-    margin: auto;
-} */
-
 .certImages {
     display: flex;
     justify-content:space-evenly;
@@ -543,7 +524,7 @@ hr {
 
 /* TABLET */
  /* Remove pointer events for certificates on tablet */
- @media (max-width: 1300px) {
+ @media (max-width: 1400px) {
 
     #background{
         width: 100%;
@@ -566,7 +547,11 @@ hr {
 
     .certImages > img {
         pointer-events: none;
+    }
 
+    #aws {
+        pointer-events: none;
+        box-shadow: none;
     }
 
   }
@@ -791,21 +776,6 @@ hr {
     }
 
 
-    /* Video */
-    /* #firstSoloVideo > p {
-        font-size: 12pt;
-        text-align: center;
-
-    }  */
-/* 
-    video {
-        width: 100%;
-        margin: auto;
-    } 
- */
-
-
-
     .certImages {
         display: grid;
         grid-template-columns: 1fr;
@@ -816,7 +786,11 @@ hr {
         pointer-events: none;
         margin: auto;
         margin-bottom: 10%;
+    }
 
+    #aws {
+        pointer-events: none;
+        box-shadow: none;
     }
 
   

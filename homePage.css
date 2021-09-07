@@ -698,6 +698,16 @@ hr {
         opacity: 1;
     }
 
+    .aboutMeContent * {
+        font-size: 18pt;
+        font-weight: 400;
+    }
+    
+    .aboutMeContent{
+        width: 70%;
+     
+    }
+
 
     
     .coleNanook {
@@ -828,6 +838,13 @@ hr {
         pointer-events: none;
         box-shadow: none;
     }
+
+    .toTop {
+        bottom: 20px;
+        right: 1px;
+        text-align: center;
+        margin: auto;
+      }
 
   
   }

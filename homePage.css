@@ -93,11 +93,9 @@
 }
 
 #cvicon:hover{
-    /* width: 27%; */
     transition-duration: 0.3s;
     border: 3px outset tomato;
     box-shadow: var(--shadow);
-    /* padding: 5px; */
     border-radius: 5px;
 }
 
@@ -106,12 +104,10 @@
 }
 
 #linkedin:hover{
-    /* width: 33%; */
     border-radius: 20px;
     transition-duration: 0.4s;
     border: 3px outset tomato;
     box-shadow: var(--shadow);
-    /* padding: 5px; */
     border-radius: 5px;
 }
 
@@ -151,27 +147,33 @@
     position: fixed;
     display: flex;
     justify-content:space-evenly;
-    font-size: 18pt;
+    font-size: 15pt;
     background-color: var(--nav-colour);
     box-shadow: var(--shadow);
     color:lightgray;
-    /* border-radius: 10px; */
-    /* margin-left: 5%; */
-    padding-bottom: 2px;
     z-index: 3;
     width: 100%;
-    /* top: 10px; */
+    top: 0;
 }
 
 .nav * {
     color: var(--text-colour);
     text-decoration: none;
-    
+    border-radius: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 5px;
 }
 
 /* when you hovor over nav bar each div turns white */
 div.nav a:hover {
     color: tomato;
+  }
+
+  #home{
+      color: tomato;
+      text-decoration: underline;
+      background-color: rgb(74, 74, 75);
   }
 
 #header {
@@ -675,16 +677,16 @@ hr {
         position: relative;
         flex-direction: column;
         z-index: 4;
-        width: 75%;
-        font-size: 16pt;
+        width: 60%;
+        font-size: 20pt;
         top: 5px;
         margin: auto;
         border-radius: 10px;
     }
 
     .nav * {
-        padding-bottom: 10px;
-        padding-top: 10px;
+        padding-bottom: 7px;
+        padding-top: 7px;
         text-align: center;
     }
 

@@ -71,7 +71,7 @@
 }
 
 /* when you hovor over nav bar each div turns white */
-#home:hover {
+div.nav a:hover  {
     color: tomato;
   }
 

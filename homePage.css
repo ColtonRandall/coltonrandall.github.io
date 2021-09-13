@@ -89,21 +89,23 @@
 }
 
 
+
 #cvicon{
-    width: 30%;
-    filter: contrast(100);
+    width: 26%;
+    bottom: 5px;
 }
 
 #cvicon:hover{
     transition-duration: 0.3s;
     box-shadow: var(--shadow);
     border-radius: 5px;
-    border: 1.5px solid tomato;
+    border: 1.5px solid black;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 4px;
 }
 
 #linkedin{
-    width: 28%;
-    filter:saturate(40);
+    width: 25%;
 }
 
 #linkedin:hover{
@@ -111,12 +113,14 @@
     transition-duration: 0.4s;
     box-shadow: var(--shadow);
     border-radius: 5px;
-    border: 1.5px solid tomato;
+    border: 1.5px solid black;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 4px;
 
 }
 
 #github{
-    width: 30%;
+    width: 25%;
 }
 
 
@@ -124,7 +128,9 @@
     transition-duration: 0.4s;
     box-shadow: var(--shadow);
     border-radius: 5px;
-    border: 1.5px solid tomato;
+    border: 1.5px solid black;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 4px;
 
     
 }
@@ -132,8 +138,7 @@
 #gmail{
     position: relative;
     top: 4px;
-    width: 28%;
-    padding: 10px;
+    width: 27%;
    
 }
 
@@ -141,7 +146,8 @@
     transition-duration: 0.4s;
     box-shadow: var(--shadow);
     border-radius: 5px;
-    border: 1.5px solid tomato;
+    border: 1.5px solid black;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 /* --------------------------------------------- */
@@ -184,7 +190,7 @@ div.nav a:hover {
   }
 
 #header {
-    padding-top: 3%;
+    /* padding-top: 1%; */
     margin-top: 10%;
     margin: auto;
     display: grid;
@@ -667,8 +673,8 @@ hr {
     .iconLinks{
         display: flex;
         flex-direction: column;
-        padding-left: 17%;    
-        padding-top: 3%;  
+        padding-left: 19%;    
+        padding-top: 6%;  
     }
 
     .iconLinks * {
@@ -677,6 +683,24 @@ hr {
         width: 60%;
         text-align: center;
         justify-content: center;
+    }
+
+    #cvicon{
+        width: 33%;
+    }
+
+    #gmail{
+        width: 33%;
+        left: 1px;
+    }
+
+    #github{
+        width: 35%;
+    }
+
+    #linkedin{
+        width: 33%;
+
     }
 
 

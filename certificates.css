@@ -51,7 +51,7 @@
 .nav{
     position: fixed;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:right;
     font-size: 16pt;
     background-color: var(--nav-colour);
     box-shadow: var(--shadow);
@@ -65,9 +65,14 @@
     color: var(--text-colour);
     text-decoration: none;
     border-radius: 5px;
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 5px;
+    margin-right: 5px;
+}
+
+#home {
+    margin-right: 20px;
 }
 
 /* when you hovor over nav bar each div turns white */
@@ -182,6 +187,8 @@ hr {
         padding-bottom: 7px;
         padding-top: 7px;
         text-align: center;
+        margin-right: 0;
+    
     }
 
     .uniCerts, .industryCerts {

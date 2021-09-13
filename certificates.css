@@ -169,7 +169,7 @@ hr {
   }
 
 
-@media (max-width: 1000px){
+@media (max-width: 900px){
 
     .nav {
         position: relative;
@@ -189,6 +189,10 @@ hr {
         text-align: center;
         margin-right: 0;
     
+    }
+
+    #home {
+        margin-right: 0px;
     }
 
     .uniCerts, .industryCerts {

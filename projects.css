@@ -113,7 +113,7 @@ h2 {
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
 
     .nav {
         position: relative;
@@ -132,6 +132,10 @@ h2 {
         padding-top: 7px;
         text-align: center;
         margin-right: 0;
+    }
+
+    #home {
+        margin-right: 0px;
     }
     
 }

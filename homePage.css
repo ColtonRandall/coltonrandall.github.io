@@ -91,21 +91,19 @@
 
 
 #cvicon{
-    width: 26%;
-    bottom: 5px;
+    width: 27%;
 }
 
 #cvicon:hover{
     transition-duration: 0.3s;
     box-shadow: var(--shadow);
     border-radius: 5px;
-    border: 1.5px solid black;
-    background-color: rgba(255, 255, 255, 0.4);
+    border: 1.5px solid whitesmoke;
     padding: 4px;
 }
 
 #linkedin{
-    width: 25%;
+    width: 26%;
 }
 
 #linkedin:hover{
@@ -113,14 +111,13 @@
     transition-duration: 0.4s;
     box-shadow: var(--shadow);
     border-radius: 5px;
-    border: 1.5px solid black;
-    background-color: rgba(255, 255, 255, 0.4);
+    border: 1.5px solid whitesmoke;
     padding: 4px;
 
 }
 
 #github{
-    width: 25%;
+    width: 28%;
 }
 
 
@@ -128,8 +125,7 @@
     transition-duration: 0.4s;
     box-shadow: var(--shadow);
     border-radius: 5px;
-    border: 1.5px solid black;
-    background-color: rgba(255, 255, 255, 0.4);
+    border: 1.5px solid whitesmoke;
     padding: 4px;
 
     
@@ -139,15 +135,14 @@
     position: relative;
     top: 4px;
     width: 27%;
-   
 }
 
 #gmail:hover{
     transition-duration: 0.4s;
     box-shadow: var(--shadow);
     border-radius: 5px;
-    border: 1.5px solid black;
-    background-color: rgba(255, 255, 255, 0.4);
+    border: 1.5px solid whitesmoke;
+    padding: 4px;
 }
 
 /* --------------------------------------------- */
@@ -674,15 +669,17 @@ hr {
         display: flex;
         flex-direction: column;
         padding-left: 19%;    
-        padding-top: 6%;  
+        padding-top: 15%;  
     }
 
     .iconLinks * {
-        padding-top: 4%;
+        padding-top: 10%;
         padding-bottom: 5%;
         width: 60%;
         text-align: center;
         justify-content: center;
+        pointer-events: none;
+
     }
 
     #cvicon{

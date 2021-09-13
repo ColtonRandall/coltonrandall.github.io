@@ -81,62 +81,67 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center; 
+
 }
 
 .iconLinks * {
-    padding: 4px;
+    padding: 5px;
 }
 
 
 #cvicon{
-    width: 29%;
+    width: 30%;
+    filter: contrast(100);
 }
 
 #cvicon:hover{
     transition-duration: 0.3s;
-    border: 3px outset tomato;
     box-shadow: var(--shadow);
     border-radius: 5px;
+    border: 1.5px solid tomato;
 }
 
 #linkedin{
-    width: 37%;
+    width: 28%;
+    filter:saturate(40);
 }
 
 #linkedin:hover{
     border-radius: 20px;
     transition-duration: 0.4s;
-    border: 3px outset tomato;
     box-shadow: var(--shadow);
     border-radius: 5px;
+    border: 1.5px solid tomato;
+
 }
 
 #github{
-    width: 45%;
+    width: 30%;
 }
 
 
 #github:hover{
     transition-duration: 0.4s;
-    border: 3px outset tomato;
     box-shadow: var(--shadow);
     border-radius: 5px;
+    border: 1.5px solid tomato;
+
     
 }
 
 #gmail{
     position: relative;
     top: 4px;
-    width: 33%;
+    width: 28%;
     padding: 10px;
    
 }
 
 #gmail:hover{
     transition-duration: 0.4s;
-    border: 3px outset tomato;
     box-shadow: var(--shadow);
     border-radius: 5px;
+    border: 1.5px solid tomato;
 }
 
 /* --------------------------------------------- */

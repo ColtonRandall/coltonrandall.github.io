@@ -572,11 +572,6 @@ hr {
         height: 100%;
     }
 
-
-    .nav * {
-        margin-right: 0;
-    }
-
     #mainphoto{
         width: 50%;
     }
@@ -611,6 +606,11 @@ hr {
         width: 100%;
         height: 100%;
     }
+
+    #home {
+        margin-right: 0px;
+    }
+
    
    #mainphoto {
     box-shadow: var(--shadow);
@@ -695,6 +695,7 @@ hr {
         padding-bottom: 7px;
         padding-top: 7px;
         text-align: center;
+        margin-right: 0px;
     }
 
     #aboutMeButton{

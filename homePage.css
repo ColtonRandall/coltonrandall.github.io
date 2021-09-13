@@ -91,7 +91,7 @@
 
 
 #cvicon{
-    width: 27%;
+    width: 26%;
 }
 
 #cvicon:hover{
@@ -112,12 +112,11 @@
     box-shadow: var(--shadow);
     border-radius: 5px;
     border: 1.5px solid whitesmoke;
-    padding: 4px;
-
+    padding: 5px;
 }
 
 #github{
-    width: 28%;
+    width: 27%;
 }
 
 
@@ -126,15 +125,12 @@
     box-shadow: var(--shadow);
     border-radius: 5px;
     border: 1.5px solid whitesmoke;
-    padding: 4px;
-
-    
+    padding: 4px;   
 }
 
 #gmail{
     position: relative;
-    top: 4px;
-    width: 27%;
+    width: 29%;
 }
 
 #gmail:hover{
@@ -670,6 +666,7 @@ hr {
         flex-direction: column;
         padding-left: 19%;    
         padding-top: 15%;  
+        
     }
 
     .iconLinks * {
@@ -678,27 +675,44 @@ hr {
         width: 60%;
         text-align: center;
         justify-content: center;
-        pointer-events: none;
-
     }
+
+
 
     #cvicon{
         width: 33%;
     }
+
+    #cvicon:hover{
+      padding: 10px;  
+    }
+ 
 
     #gmail{
         width: 33%;
         left: 1px;
     }
 
+    #gmail:hover{
+        padding: 10px;  
+      }
+
+
     #github{
         width: 35%;
     }
 
+    #github:hover{
+        padding: 10px;  
+      }
+
     #linkedin{
         width: 33%;
-
     }
+
+    #linkedin:hover{
+        padding: 10px;  
+      }
 
 
     #scroll{
@@ -884,6 +898,6 @@ hr {
       }
 
   
-  }
+    }
 
  

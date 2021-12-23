@@ -243,8 +243,6 @@ div.nav a:hover {
 
 }
 
-
-
 /* --------------------------------------------- */
 /* SCROLL ICON */
 
@@ -274,7 +272,6 @@ div.nav a:hover {
     }
 }
 
-
 #scroll{
     position: relative;
     width: 3%;
@@ -282,7 +279,6 @@ div.nav a:hover {
     display: flex;
     justify-content: center;
     bottom: 80px;
-
 }
 
 
@@ -530,7 +526,7 @@ div.nav a:hover {
     width: fit-content;
     position: fixed;  
     bottom: 20px;
-    right: 3px;
+    right: 20px;
     border-radius: 5px;
     text-align: center;
     margin: auto;
@@ -542,11 +538,11 @@ div.nav a:hover {
   }
 
   #arrow {
-    width: 100px;
+    width: 50px;
 }
 
 #arrow:hover {
-    animation: arrow 2s ease infinite;
+    animation: arrow 1.5s ease infinite;
  }
  
 /* timeline of hover animation */
@@ -555,7 +551,7 @@ div.nav a:hover {
  transform: translate(0);
  }
  50% {
- transform: translate(0,-25px);  
+ transform: translate(0,-15px);  
 }
  100% {
      transform: translate(0);

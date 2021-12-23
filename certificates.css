@@ -164,6 +164,43 @@ h2 {
 border: 5px solid tomato;
 }
 
+.toTop {
+    width: fit-content;
+    position: fixed;  
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+  }
+  
+  #toTopText{
+      font-family: monospace;
+      font-size: 12pt;
+  }
+
+  #arrow {
+    width: 50px;
+}
+
+#arrow:hover {
+    animation: arrow 1.5s ease infinite;
+ }
+ 
+/* timeline of hover animation */
+@keyframes arrow {
+ 0% {
+ transform: translate(0);
+ }
+ 50% {
+ transform: translate(0,-15px);  
+}
+ 100% {
+     transform: translate(0);
+ }
+}
+
+
 
 hr {
     width: 85%;
@@ -173,16 +210,13 @@ hr {
 
 /* TABLET */
  /* Remove pointer events for certificates on tablet */
- @media (max-width: 1400px) {
-   
+ @media (max-width: 1400px) { 
 
     #background{
         width: 100%;
         height: 100%;
     }
-
   }
-
 
 @media (max-width: 900px){
 
@@ -203,11 +237,18 @@ hr {
         padding-top: 7px;
         text-align: center;
         margin-right: 0;
-    
     }
 
     #home {
         margin-right: 0px;
+    }
+
+    #mainTitle{
+        font-size: 30pt;
+    }
+
+    #industryCertsTitle, #UniCertsTitle, #OnlineCertsTitle{
+        font-size: 20pt;
     }
 
     .uniCerts, .industryCerts {
@@ -229,22 +270,15 @@ hr {
         margin-bottom: 15%;
     }
 
-.certImages {
-    display: grid;
-    grid-template-columns: 1fr;
-}
+    .certImages {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
-.certImages > img {
-    width: 80%;
-    pointer-events: none;
-    margin: auto;
-    margin-bottom: 10%;
-}
-
-
-
-
-
-
-
+    .certImages > img {
+        width: 80%;
+        pointer-events: none;
+        margin: auto;
+        margin-bottom: 10%;
+    }
 }

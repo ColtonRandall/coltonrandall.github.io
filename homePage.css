@@ -229,6 +229,10 @@ div.nav a:hover {
     margin: auto;
 }
 
+#SEtitle{
+    font-size: 30pt;
+}
+
 #location {
 
     color: var(--text-colour);

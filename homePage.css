@@ -1,24 +1,23 @@
-
 /* * { border: 1px solid white };  */
 
 :root {
-    --text-colour: aliceblue; 
+    --text-colour: aliceblue;
     --nav-colour: #333;
     --shadow: 4px 4px 6px black;
     --textShadow: 2px 2px 3px black;
-  }
+}
 
- /* fill the whole page  */
- html, body {
+/* fill the whole page  */
+html, body {
     height: 100%;
     margin: 0;
     font-family: 'exo2';
-  }
+}
 
-  body {
-      color: var(--text-colour);
-      font-weight: lighter;
-  }
+body {
+    color: var(--text-colour);
+    font-weight: lighter;
+}
 
 
 /* --------------------------------------------- */
@@ -32,9 +31,10 @@
 /* --------------------------------------------- */
 /* MAIN IMAGES */
 
-#background{
+#background {
     width: 100%;
-    background-size:cover;
+    height: 100%;
+    background-size: cover;
     z-index: -3;
     position: fixed;
     top: 0;
@@ -42,14 +42,14 @@
 }
 
 
-#mainphoto{
+#mainphoto {
     width: 40%;
     border-radius: 20%;
     margin: auto;
     border: 3px solid rgb(66, 66, 66);
     box-shadow: var(--shadow);
     margin-top: 10%;
-    filter:brightness(95%);
+    filter: brightness(95%);
 }
 
 
@@ -59,28 +59,28 @@
     animation: mainImageFadeIn ease 3s;
     animation-delay: 2s;
     animation-iteration-count: 1;
-    animation-fill-mode:both;
+    animation-fill-mode: both;
 
 }
+
 @keyframes mainImageFadeIn {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
 
-
-
 /* icon links */
-.iconLinks{
+.iconLinks {
     margin: auto;
     margin-top: 7%;
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: center; 
+    text-align: center;
 
 }
 
@@ -88,13 +88,11 @@
     padding: 5px;
 }
 
-
-
-#cvicon{
+#cvicon {
     width: 26%;
 }
 
-#cvicon:hover{
+#cvicon:hover {
     transition-duration: 0.3s;
     box-shadow: var(--shadow);
     border-radius: 5px;
@@ -102,11 +100,11 @@
     padding: 4px;
 }
 
-#linkedin{
+#linkedin {
     width: 26%;
 }
 
-#linkedin:hover{
+#linkedin:hover {
     border-radius: 20px;
     transition-duration: 0.4s;
     box-shadow: var(--shadow);
@@ -115,25 +113,25 @@
     padding: 5px;
 }
 
-#github{
+#github {
     width: 27%;
 }
 
 
-#github:hover{
+#github:hover {
     transition-duration: 0.4s;
     box-shadow: var(--shadow);
     border-radius: 5px;
     border: 1.5px solid whitesmoke;
-    padding: 4px;   
+    padding: 4px;
 }
 
-#gmail{
+#gmail {
     position: relative;
     width: 29%;
 }
 
-#gmail:hover{
+#gmail:hover {
     transition-duration: 0.4s;
     box-shadow: var(--shadow);
     border-radius: 5px;
@@ -145,14 +143,14 @@
 /* CONTENT */
 
 /* adds style to nav bar */
-.nav{
+.nav {
     position: fixed;
     display: flex;
-    justify-content:right;
+    justify-content: right;
     font-size: 15pt;
     background-color: var(--nav-colour);
     box-shadow: var(--shadow);
-    color:lightgray;
+    color: lightgray;
     z-index: 3;
     width: 100%;
     top: 0;
@@ -171,17 +169,16 @@
 /* when you hovor over nav bar each div turns white */
 div.nav a:hover {
     color: tomato;
-  }
+}
 
-  #home{
-      color: tomato;
-      text-decoration: underline;
-      background-color: rgb(74, 74, 75);
-      margin-right: 20px;
-  }
+#home {
+    color: tomato;
+    text-decoration: underline;
+    background-color: rgb(74, 74, 75);
+    margin-right: 20px;
+}
 
 #header {
-    /* padding-top: 1%; */
     margin-top: 10%;
     margin: auto;
     display: grid;
@@ -191,8 +188,7 @@ div.nav a:hover {
     text-shadow: 2px 2px 3px black;
 }
 
-
-#title{
+#title {
     color: var(--text-colour);
     text-align: center;
     font-weight: 500;
@@ -203,15 +199,17 @@ div.nav a:hover {
 #title {
     animation: titleFadeIn ease 3s;
     animation-iteration-count: 1;
-    animation-fill-mode:both;
+    animation-fill-mode: both;
 
 }
+
 @keyframes titleFadeIn {
     0% {
         opacity: 0;
         color: tomato;
         font-size: 12pt;
     }
+
     100% {
         opacity: 1;
         color: whitesmoke;
@@ -220,8 +218,7 @@ div.nav a:hover {
     }
 }
 
-
-#subTitle{
+#subTitle {
     color: var(--text-colour);
     text-align: center;
     font-size: 14pt;
@@ -229,9 +226,30 @@ div.nav a:hover {
     margin: auto;
 }
 
-#SEtitle{
+#SEtitle {
     font-size: 30pt;
 }
+
+blink {
+    -webkit-animation: 1.5s linear infinite condemned_blink_effect;
+    animation: 1.5s linear infinite condemned_blink_effect;
+}
+
+@keyframes condemned_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
+
+
 
 #location {
 
@@ -246,7 +264,7 @@ div.nav a:hover {
 /* --------------------------------------------- */
 /* SCROLL ICON */
 
-#scrollDiv{
+#scrollDiv {
     margin-top: 4%;
 }
 
@@ -254,25 +272,27 @@ div.nav a:hover {
     /* ensure animation works for all browsers */
     /* ease = speed up then slow down */
     -webkit-animation: scrolling 3s ease infinite;
-       -moz-animation: scrolling 3s ease infinite;
-       -o-animation: scrolling 3s  ease infinite;
-       animation: scrolling 3s ease infinite;
-    }
-    
+    -moz-animation: scrolling 3s ease infinite;
+    -o-animation: scrolling 3s ease infinite;
+    animation: scrolling 3s ease infinite;
+}
+
 /* timeline of animation */
 @keyframes scrolling {
     0% {
-    transform: translate(0);
+        transform: translate(0);
     }
+
     50% {
-    transform: translate(0,100px);  
-}
+        transform: translate(0, 100px);
+    }
+
     100% {
         transform: translate(0);
     }
 }
 
-#scroll{
+#scroll {
     position: relative;
     width: 3%;
     margin: auto;
@@ -290,7 +310,7 @@ div.nav a:hover {
     justify-content: center;
 }
 
-#aboutMeButton{
+button {
     background-color: rgb(201, 195, 195);
     color: black;
     width: 15%;
@@ -299,11 +319,11 @@ div.nav a:hover {
     font-size: 1.5rem;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 10px; 
+    padding: 10px;
     opacity: 0.7;
 }
 
-#aboutMeButton:hover{
+button:hover {
     color: whitesmoke;
     background-color: #333;
     transition-duration: 0.4s;
@@ -313,19 +333,19 @@ div.nav a:hover {
 }
 
 
-#aboutMeButton:active {
+button:active {
     background-color: tomato;
     transform: translateY(4px);
-  }
+}
 
 
 /* ------- ABOUT ME CONTENT ------ */
-#ABOUTME{
+#ABOUTME {
     display: none;
     transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;
 }
 
-#aboutmeTitle{
+#aboutmeTitle {
     text-align: center;
     font-size: 35pt;
     text-shadow: var(--textShadow);
@@ -338,18 +358,18 @@ div.nav a:hover {
     font-weight: 400;
 }
 
-.aboutMeContent{
+.aboutMeContent {
     width: 80%;
     padding-top: 10%;
     margin: auto;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 /* -- IMAGES -- */
 
 /* --- Intro - Me and Nanook --- */
-.coleNanook{
+.coleNanook {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 5%;
@@ -359,6 +379,7 @@ div.nav a:hover {
 #coleNanookContent {
     width: 100%;
 }
+
 #coleNanookIMG {
     width: 80%;
     margin: auto;
@@ -367,17 +388,17 @@ div.nav a:hover {
 }
 
 /* --- RWANDA1 --- */
-.Rwanda1Div{
+.Rwanda1Div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
 }
 
-#Rwanda1Content{
+#Rwanda1Content {
     width: 100%;
 }
 
-#rwanda1IMG{
+#rwanda1IMG {
     width: 75%;
     margin: auto;
     box-shadow: var(--shadow);
@@ -388,22 +409,24 @@ div.nav a:hover {
 
 /* --- RWANDA2 --- */
 
-.Rwanda2Div{
+.Rwanda2Div {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     padding-top: 5%;
 }
-#Rwanda2Content{
+
+#Rwanda2Content {
     width: 100%;
 }
-#rwanda2IMG{
+
+#rwanda2IMG {
     margin: auto;
     width: 70%;
     box-shadow: var(--shadow);
     border-radius: 10px;
 }
 
-#extraPhotos{
+#extraPhotos {
     display: flex;
     padding: 5px;
 }
@@ -426,136 +449,90 @@ div.nav a:hover {
 
 /* -- OTAGO --- */
 
-#otagoContent1{
+#otagoContent1 {
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
-#otagoImages{
+#otagoImages {
     display: flex;
     padding: 1rem;
     justify-content: space-between;
 }
 
-#otagoIMG{
+#otagoIMG {
     width: 30%;
     box-shadow: var(--shadow);
     border-radius: 10px;
 }
 
-#otagoGradIMG{
+#otagoGradIMG {
     width: 40%;
     box-shadow: var(--shadow);
     border-radius: 10px;
 }
 
-#otagoContent2{
+#otagoContent2 {
     padding-top: 5%;
 }
 
 
 /* --- AVIATION --- */
 
-.flyingDiv{
+.flyingDiv {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
-#flyingContent{
+#flyingContent {
     width: 100%;
 }
 
-#flyingIMG{
+#flyingIMG {
     width: 50%;
     margin: auto;
     box-shadow: var(--shadow);
     border-radius: 10px;
 }
 
-/* 
-.certImages {
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap:wrap;
-    margin: auto;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.certImages img {
-    position: relative;
-    border: 3px solid black;
-    box-shadow: var(--shadow);
-    width: 20%;
-    margin: 1rem;
-    transition-duration: 1s;
-}
-
-.certImages img:hover{
-    padding: 0;
-    margin: 0;
-    flex-grow:0.25;
-    border: 5px solid tomato;
-    transition-duration: 1s;
-}
-
-#aws {
-    width: 70%;
-    padding-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-#AWSdiv{
-    margin: auto;
-    align-content: center;
-    width:20rem; 
-    height:20rem; 
-    overflow: visible;
-}
-
-#aws:hover {
-    width: 80%;
-    transition-duration: 1s;
-} */
-
 .toTop {
     width: fit-content;
-    position: fixed;  
+    position: fixed;
     bottom: 20px;
     right: 20px;
     border-radius: 5px;
     text-align: center;
     margin: auto;
-  }
-  
-  #toTopText{
-      font-family: monospace;
-      font-size: 12pt;
-  }
+}
 
-  #arrow {
+#toTopText {
+    font-family: monospace;
+    font-size: 12pt;
+}
+
+#arrow {
     width: 50px;
 }
 
 #arrow:hover {
     animation: arrow 1.5s ease infinite;
- }
- 
+}
+
 /* timeline of hover animation */
 @keyframes arrow {
- 0% {
- transform: translate(0);
- }
- 50% {
- transform: translate(0,-15px);  
-}
- 100% {
-     transform: translate(0);
- }
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(0, -15px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
 }
 
 
@@ -566,20 +543,20 @@ hr {
 /* -------------------------------------------- */
 
 /* TABLET */
- /* Remove pointer events for certificates on tablet */
- @media (max-width: 1400px) {
+/* Remove pointer events for certificates on tablet */
+@media (max-width: 1400px) {
 
-    #background{
+    #background {
         width: 100%;
         height: 100%;
     }
 
-    #mainphoto{
+    #mainphoto {
         width: 50%;
     }
 
-  
-    #aboutMeButton{
+
+    #aboutMeButton {
         width: 40%;
         font-size: 3vh;
     }
@@ -588,7 +565,7 @@ hr {
         display: none;
     }
 
-    .certImages > img {
+    .certImages>img {
         pointer-events: none;
     }
 
@@ -597,14 +574,14 @@ hr {
         box-shadow: none;
     }
 
-  }
+}
 
 /* ----------- MOBILE APP ---------- */
 
 @media (max-width: 900px) {
 
 
-    #background{
+    #background {
         width: 100%;
         height: 100%;
     }
@@ -613,17 +590,17 @@ hr {
         margin-right: 0px;
     }
 
-   
-   #mainphoto {
-    box-shadow: var(--shadow);
-    width: 40%;
-    margin-bottom: 15px;
+
+    #mainphoto {
+        box-shadow: var(--shadow);
+        width: 40%;
+        margin-bottom: 15px;
     }
 
     #ABOUTME img {
         box-shadow: var(--shadow);
     }
-  
+
 
     #header {
         grid-template-columns: 1fr;
@@ -652,6 +629,7 @@ hr {
             color: tomato;
             font-size: 9pt;
         }
+
         100% {
             opacity: 1;
             color: whitesmoke;
@@ -661,12 +639,12 @@ hr {
     }
 
 
-    .iconLinks{
+    .iconLinks {
         display: flex;
         flex-direction: column;
-        padding-left: 19%;    
-        padding-top: 15%;  
-        
+        padding-left: 19%;
+        padding-top: 15%;
+
     }
 
     .iconLinks * {
@@ -679,43 +657,43 @@ hr {
 
 
 
-    #cvicon{
+    #cvicon {
         width: 33%;
     }
 
-    #cvicon:hover{
-      padding: 10px;  
+    #cvicon:hover {
+        padding: 10px;
     }
- 
 
-    #gmail{
+
+    #gmail {
         width: 33%;
         left: 1px;
     }
 
-    #gmail:hover{
-        padding: 10px;  
-      }
+    #gmail:hover {
+        padding: 10px;
+    }
 
 
-    #github{
+    #github {
         width: 35%;
     }
 
-    #github:hover{
-        padding: 10px;  
-      }
+    #github:hover {
+        padding: 10px;
+    }
 
-    #linkedin{
+    #linkedin {
         width: 33%;
     }
 
-    #linkedin:hover{
-        padding: 10px;  
-      }
+    #linkedin:hover {
+        padding: 10px;
+    }
 
 
-    #scroll{
+    #scroll {
         display: none;
         width: 5%;
     }
@@ -738,14 +716,14 @@ hr {
         margin-right: 0px;
     }
 
-    #aboutMeButton{
+    #aboutMeButton {
         background-color: #333;
         border: 2px solid tomato;
         box-shadow: var(--shadow);
         color: whitesmoke;
         width: 70%;
         font-size: 15pt;
-        padding: 10px; 
+        padding: 10px;
         opacity: 1;
     }
 
@@ -753,14 +731,14 @@ hr {
         font-size: 18pt;
         font-weight: 400;
     }
-    
-    .aboutMeContent{
+
+    .aboutMeContent {
         width: 70%;
-     
+
     }
 
 
-    
+
     .coleNanook {
         grid-template-columns: 1fr;
         margin: auto;
@@ -769,7 +747,7 @@ hr {
         align-items: center;
     }
 
-    #coleNanookIMG{
+    #coleNanookIMG {
         margin-bottom: 5%;
         margin-left: 50px;
     }
@@ -785,17 +763,18 @@ hr {
     .Rwanda1Div img:nth-of-type(2) {
         order: 1;
     }
+
     .Rwanda1Div p:nth-of-type(1) {
         order: 2;
     }
-    
+
     #rwanda1IMG {
         margin-bottom: 5%;
         margin-top: 5%;
         place-content: center;
     }
 
-    #extraPhotos{
+    #extraPhotos {
         flex-direction: column;
         margin: auto;
         width: 100%;
@@ -821,19 +800,19 @@ hr {
         text-align: justify;
         align-items: center;
     }
-    
+
 
     #rwanda2IMG {
         margin-bottom: 5%;
     }
-    
+
     .OtagoDiv {
         grid-template-columns: 1fr;
         margin: auto;
         width: 100%;
         text-align: justify;
         align-items: center;
-        }
+    }
 
     #otagoImages {
         flex-direction: column;
@@ -841,7 +820,7 @@ hr {
         margin: auto;
         width: 100%;
     }
-    
+
     #otagoIMG {
         width: 60%;
         margin-bottom: 5%;
@@ -878,7 +857,7 @@ hr {
         grid-template-columns: 1fr;
     }
 
-    .certImages > img {
+    .certImages>img {
         width: 80%;
         pointer-events: none;
         margin: auto;
@@ -895,9 +874,7 @@ hr {
         right: 1px;
         text-align: center;
         margin: auto;
-      }
-
-  
     }
 
- 
+
+}

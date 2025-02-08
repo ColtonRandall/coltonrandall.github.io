@@ -1,36 +1,23 @@
 :root {
-  --text-colour: aliceblue;
+  --textColour: rgb(207, 238, 250);
   --nav-colour: #333;
   --shadow: 4px 4px 6px black;
-  --textShadow: 2px 2px 3px black;
+  --textShadow: 1px 1px 1px black;
+  --fontFamily: "Cabin", sans-serif;
 }
 
-/* fill the whole page  */
 html,
 body {
   height: 100%;
+  font-family: var(--fontFamily);
+  color: var(--textColour);
   margin: 0;
-}
-
-body {
-  color: var(--text-colour);
-}
-
-/* --------------------------------------------- */
-/* MAIN IMAGES */
-
-#background {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  z-index: -3;
-  position: fixed;
-  top: 0;
-  left: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-attachment: fixed;
 }
 
 #mainphoto {
-  width: 40%;
+  width: 55%;
   border-radius: 20%;
   margin: auto;
   border: 3px solid rgb(66, 66, 66);
@@ -39,7 +26,6 @@ body {
   filter: brightness(95%);
 }
 
-/* Main photo fadein animation */
 #mainphoto {
   animation: mainImageFadeIn ease 3s;
   animation-delay: 2s;
@@ -57,7 +43,6 @@ body {
   }
 }
 
-/* icon links */
 .iconLinks {
   margin: auto;
   margin-top: 7%;
@@ -121,10 +106,7 @@ body {
   padding: 4px;
 }
 
-/* --------------------------------------------- */
 /* CONTENT */
-
-/* adds style to nav bar */
 .nav {
   position: fixed;
   display: flex;
@@ -139,7 +121,7 @@ body {
 }
 
 .nav * {
-  color: var(--text-colour);
+  color: var(--textColour);
   text-decoration: none;
   border-radius: 5px;
   padding-left: 20px;
@@ -148,7 +130,6 @@ body {
   margin-right: 5px;
 }
 
-/* when you hovor over nav bar each div turns white */
 div.nav a:hover {
   color: tomato;
 }
@@ -171,17 +152,15 @@ div.nav a:hover {
 }
 
 #title {
-  color: var(--text-colour);
-  text-align: center;
-  font-weight: 500;
-  margin: auto;
-}
-
-/* Title fadein animation */
-#title {
   animation: titleFadeIn ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
+}
+
+#title {
+  text-align: center;
+  font-weight: 500;
+  margin: auto;
 }
 
 @keyframes titleFadeIn {
@@ -193,14 +172,14 @@ div.nav a:hover {
 
   100% {
     opacity: 1;
-    color: whitesmoke;
+    color: tomato;
     font-size: 80pt;
     text-shadow: 5px 5px 7px black;
   }
 }
 
 #subTitle {
-  color: var(--text-colour);
+  color: var(--textColour);
   text-align: center;
   font-size: 14pt;
   font-weight: 500;
@@ -231,14 +210,13 @@ blink {
 }
 
 #location {
-  color: var(--text-colour);
+  color: var(--textColour);
   text-align: center;
   font-size: 13pt;
   font-weight: 500;
   margin: auto;
 }
 
-/* --------------------------------------------- */
 /* SCROLL ICON */
 
 #scrollDiv {
@@ -246,15 +224,12 @@ blink {
 }
 
 #scroll {
-  /* ensure animation works for all browsers */
-  /* ease = speed up then slow down */
   -webkit-animation: scrolling 3s ease infinite;
   -moz-animation: scrolling 3s ease infinite;
   -o-animation: scrolling 3s ease infinite;
   animation: scrolling 3s ease infinite;
 }
 
-/* timeline of animation */
 @keyframes scrolling {
   0% {
     transform: translate(0);
@@ -278,7 +253,7 @@ blink {
   bottom: 80px;
 }
 
-/* ------- ABOUT ME BUTTON ------ */
+/* ABOUT ME BUTTON */
 
 #buttonDiv {
   padding: 5%;
@@ -287,7 +262,7 @@ blink {
 }
 
 button {
-  background-color: rgb(201, 195, 195);
+  background-color: rgb(167, 247, 249);
   color: black;
   width: 15%;
   font-weight: 500;
@@ -312,7 +287,7 @@ button:active {
   transform: translateY(4px);
 }
 
-/* ------- ABOUT ME CONTENT ------ */
+/* ABOUT ME CONTENT */
 #ABOUTME {
   display: none;
   transition: height 1s, width 1s, padding 1s, visibility 1s,
@@ -336,12 +311,9 @@ button:active {
   width: 80%;
   padding-top: 10%;
   margin: auto;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* -- IMAGES -- */
-
-/* --- Intro - Me and Nanook --- */
+/* IMAGES */
 .coleNanook {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -360,7 +332,7 @@ button:active {
   border-radius: 30px;
 }
 
-/* --- RWANDA1 --- */
+/* RWANDA1 */
 .Rwanda1Div {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -378,7 +350,7 @@ button:active {
   filter: contrast(130%);
 }
 
-/* --- RWANDA2 --- */
+/* RWANDA2 */
 
 .Rwanda2Div {
   display: grid;
@@ -417,7 +389,7 @@ button:active {
   filter: contrast(110%);
 }
 
-/* -- OTAGO --- */
+/* OTAGO */
 
 #otagoContent1 {
   padding-top: 5%;
@@ -446,7 +418,7 @@ button:active {
   padding-top: 5%;
 }
 
-/* --- AVIATION --- */
+/* AVIATION */
 
 .flyingDiv,
 .XeroDiv {
@@ -498,7 +470,6 @@ button:active {
   animation: arrow 1.5s ease infinite;
 }
 
-/* timeline of hover animation */
 @keyframes arrow {
   0% {
     transform: translate(0);
@@ -517,10 +488,7 @@ hr {
   width: 85%;
 }
 
-/* -------------------------------------------- */
-
 /* TABLET */
-/* Remove pointer events for certificates on tablet */
 @media (max-width: 1400px) {
   #background {
     width: 100%;
@@ -550,7 +518,7 @@ hr {
   }
 }
 
-/* ----------- MOBILE APP ---------- */
+/* MOBILE */
 
 @media (max-width: 900px) {
   #background {
@@ -843,8 +811,4 @@ hr {
     text-align: center;
     margin: auto;
   }
-}
-
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
